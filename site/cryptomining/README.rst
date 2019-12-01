@@ -9,17 +9,4 @@ other cryptocurrency mining traffic that uses `getwork
 or HTTP.  Note that the module cannot currently detect the Bitcoin P2P
 protocol, which is different from the mining protocols.
 
-See mining.bro for more details on how it works.
-
-Installation
-------------
-
-Via `zkg <https://docs.zeek.org/projects/package-manager/en/stable/>`_::
-
-    zkg install jsiwek/zeek-cryptomining
-
-Manually::
-
-    cd <prefix>/share/zeek/site
-    git clone https://github.com/jsiwek/zeek-cryptomining cryptomining
-    echo "@load cryptomining" >> local.zeek
+See mining.zeek for more details on how it works.
