@@ -1,5 +1,6 @@
 #! /bin/bash
 
+#  Ensure this file is executable.  
 #  This script will replace your current Local.zeek file and any file with the same name orientation.
 #  to run the script:  ./install.sh /source_folder/ /destination_folder/
 #  example:  ./install.sh /home/iwcdev/Downloads/Zeek-Bro/site/ /opt/zeek/share/zeek/
