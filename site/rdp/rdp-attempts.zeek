@@ -1,6 +1,6 @@
 @load base/protocols/rdp
 @load base/protocols/rdp/consts.zeek
-@load ./countable.zeek
+@load ./counttable.zeek
 module HLRDP;
 
 export {
