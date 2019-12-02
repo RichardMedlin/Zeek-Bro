@@ -121,7 +121,9 @@ redef ignore_checksums = T;
 
 #Exfiltration Monitoring after hours add the following:
 @load exfil-detection-framework
-#  Redefine networks monitored for exfil in your local.bro:
+#  Redefine networks monitored for exfil in your local.zeek:
+#  change IP x.x.x.x/x, y.y.y.y/y to your networks that you want
+#  to be monitor.
 redef Exfil::watched_subnets_conn = [10.211.55.0/24, 192.168.0.0/24];
 #  Redefine the business hours of your network in your local.bro 
 #  (start_time and end_time must be specified on 24 hour clock):
