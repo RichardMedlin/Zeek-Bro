@@ -98,8 +98,7 @@ redef ignore_checksums = T;
 # Uncomment the following line to enable detection of the heartbleed attack. Enabling
 # this might impact performance a bit.
 @load policy/protocols/ssl/heartbleed
-# Added on my own.
-@load policy/protocols/ssl/validate-certs
+
 # Added on my own to test out.
 @load policy/tuning/track-all-assets
 # Uncomment the following line to enable logging of connection VLANs. Enabling
