@@ -125,7 +125,7 @@ redef ignore_checksums = T;
 #  change IP x.x.x.x/x, y.y.y.y/y to your networks that you want
 #  to be monitor.
 redef Exfil::watched_subnets_conn = [10.211.55.0/24, 192.168.0.0/24];
-#  Redefine the business hours of your network in your local.bro 
+#  Redefine the business hours of your network in your local.zeek 
 #  (start_time and end_time must be specified on 24 hour clock):
 redef Exfil::hours = [ $start_time=2359, $end_time=0600 ];
 #  Producer Consumer Ratio for detecting PCR on the network nodes to 
