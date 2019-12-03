@@ -9,14 +9,14 @@ export {
 	};
 
 	## Distinct Tor-like X.509 certificates to see before deciding it's Tor.
-	const tor_cert_threshold = 1.0;
+	const tor_cert_threshold = 10.0;
 
-	## Time period to see the :bro:see:`tor_cert_threshold` certificates
+	## Time period to see the :zeek:see:`tor_cert_threshold` certificates
 	## before deciding it's Tor.
-	const tor_cert_period = 1min;
+	const tor_cert_period = 5min;
 	
 	# Number of Tor certificate samples to collect.
-	const tor_cert_samples = 1 &redef;
+	const tor_cert_samples = 3 &redef;
 }
 
 event zeek_init()
